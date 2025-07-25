@@ -16,13 +16,11 @@ title: making movements
 
 our political systems are failing us  
 noone believes our leaders will solve our problems  
-
 and the far right winning  
 
-the old model is broken  
-nothing will change  
-
-**until we fix it**
+the way we do politics is broken
+things will keep getting worse
+until we fix it
 
 ---
 
