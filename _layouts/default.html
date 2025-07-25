@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <header>
+    <button id="toggle-theme" aria-label="Toggle dark mode">🌓</button>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p><a href="mailto:hello@example.com">get in touch</a></p>
+    <p><small>&copy; {{ site.title }} — built with Jekyll</small></p>
+    <p><small>this is a <a href="https://solar.lowtechmagazine.com/about/the-solar-website/" target="_blank">power saving site</a> inspired by low tech</small></p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-theme');
+    const root = document.documentElement;
+    const stored = localStorage.getItem('theme');
+    if (stored) root.setAttribute('data-theme', stored);
+    toggleBtn.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+
+</body>
+</html>

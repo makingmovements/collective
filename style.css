@@ -1,0 +1,65 @@
+:root[data-theme="light"] {
+  --bg: #fff;
+  --text: #111;
+  --link: #000;
+  --meta: #555;
+  --footer: #999;
+}
+:root[data-theme="dark"] {
+  --bg: #111;
+  --text: #eee;
+  --link: #fff;
+  --meta: #aaa;
+  --footer: #666;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 0 1em;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: monospace;
+  margin-top: 2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--meta);
+  margin-top: 0.3em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4em;
+  font-size: 0.9rem;
+  color: var(--footer);
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 1rem;
+  float: right;
+}
